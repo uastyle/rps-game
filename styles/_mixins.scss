@@ -1,0 +1,30 @@
+@mixin fonts($font-family, $font-size, $font-weight, $font-style, $line-height, $text-transform, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  font-style: $font-style;
+  line-height: $line-height;
+  text-transform: $text-transform;
+  color: $color;
+}
+@mixin center($center, $middle){
+  text-align: $center;
+  vertical-align: $middle;
+}
+@mixin background-image($position, $value1, $value2){
+  background-image: -webkit-linear-gradient($position, $value1, $value2);
+  background-image: -moz-linear-gradient($position, $value1, $value2);
+  background-image: -ms-linear-gradient($position, $value1, $value2);
+  background-image: -o-linear-gradient($position, $value1, $value2);
+  background-image: linear-gradient($position, $value1, $value2);
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@mixin dimensions($width, $height){
+  width: $width;
+  height: $height;
+}
