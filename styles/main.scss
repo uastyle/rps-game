@@ -12,32 +12,14 @@ body {
   @include center(center, middle);
   overflow: hidden;
   img.o {
-    margin: 0 -20px 10px;
-  }
-  span.p {
-    margin-left: 30px
-  }
-  img.a {
-    margin: 25px 0 26px -30px
-  }
-  span.per {
-    margin: 0 0 0 -28px
-  }
-  span.s {
-    margin: 0 0 0 28px
-  }
-  img.c {
-    margin: -8px 0 0 -16px
-  }
-  span.issors {
-    margin: 0 0 0 -12px
+    margin: 0 -2px 10px;
   }
 }
 header {
   margin-bottom: 60px;
 }
 h1 {
-  @include fonts(jaf-domus-titling-web, 4.1em, 700, normal, 1.1, uppercase, #fff);
+  @include fonts(jaf-domus-titling-web, 4em, 700, normal, 1.1, uppercase, #fff);
 }
 h2 {
   @include fonts(jaf-domus-titling-web, 35px, 700, normal, 35px, none, rgba(34, 34, 34, 1.00));
@@ -99,4 +81,38 @@ p.button:active {
 footer {
   margin-bottom: 0;
   @include center(center, middle);
+}
+@media (min-width: 480px) and (max-width: 769px) {
+  #play {
+    h1 {
+      font-size: 6em;
+    }
+    h2 {
+      font-size: 3.5em;
+    }
+    h4 {
+      font-size: 2em;
+      color: #fff;
+    }
+    p {
+      font-size: 2.5em;
+    }
+    img {
+      transform: scale(1.2);
+    }
+    img.o {
+      margin: 0 -2px 18px;
+    }
+  }
+  #icons {
+    div {
+      margin: 8%;
+      transform: scale(1.8);
+    }
+  }
+  p.button {
+    padding: 32px 26px;
+    margin-top: 50px;
+    width: 240px;
+  }
 }
