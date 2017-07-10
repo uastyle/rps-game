@@ -56,7 +56,7 @@ function newGame() {
 var uk = {
 	title: "Камінь, ножиці, папір – грай з комп'ютером!",
 	lang: "English, please",
-	h1: "Камінь, но<img class='o' src='images/scissors.png'/>иці, папір",
+	h1: "Камінь н<img class='o' src='images/rock.png'/>жиці папір",
 	rules: "Ножиці ріжуть папір. Папір накриває камінь. Камінь ламає ножиці.",
 	action: "Зроби свій вибір!",
 	h4: "Хто виграє?",

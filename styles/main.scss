@@ -6,6 +6,10 @@ body {
   background-color: $blue-color;
   font: $font-stack;
 }
+button {
+  float: right;
+  
+}
 #play {
   margin: 0;
   padding: 5px 0 50px;
